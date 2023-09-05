@@ -1,30 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.20.1.final using JasperReports Library version 6.20.1-7584acb244139816654f64e2fd57a00d3e31921e  -->
-<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="FirstJasper" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="683007f1-5c01-475e-8c10-3129af7eabb1">
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Simple_Blue" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="83f7e3d0-5554-402e-bd1d-2458f2d5792e">
 
-    <field name="id" class="java.lang.Long">
-
+    <field name="studentName" class="java.lang.String">
     </field>
-    <field name="firstName" class="java.lang.String">
-
+    <field name="studentId" class="java.lang.Long">
     </field>
-   <field name="lastName" class="java.lang.String">  <!-- java.sql.Timestamp -->
-
-    </field>
-    <field name="age" class="java.lang.Integer">
-
-    </field>
-    <field name="email" class="java.lang.String">
-
-    </field>
-    <field name="startedDate" class="java.util.Date">
-
-    </field>
-    <field name="expectedGraduate" class="java.util.Date">
-
-    </field>
-    <field name="active" class="java.lang.Boolean">
-
+    <field name="schoolName" class="java.lang.String">
     </field>
     <background>
         <band/>
@@ -32,20 +14,20 @@
     <title>
         <band height="72">
             <frame>
-                <reportElement mode="Opaque" x="-20" y="-20" width="595" height="92" backcolor="#006699" uuid="41b49640-f2c6-4eda-975f-433292603fd1"/>
+                <reportElement mode="Opaque" x="-20" y="-20" width="595" height="92" backcolor="#006699" uuid="f2448c3b-888c-40f2-b587-09c75e3190d4"/>
                 <staticText>
-                    <reportElement x="20" y="20" width="575" height="43" forecolor="#FFFFFF" uuid="86e1d0a0-7e9b-4fcb-9813-43ba3ae18510"/>
+                    <reportElement x="20" y="20" width="234" height="43" forecolor="#FFFFFF" uuid="33b2983f-c40c-42b4-8b0b-47584bdccf9a"/>
                     <textElement>
                         <font size="34" isBold="true"/>
                     </textElement>
-                    <text><![CDATA[Student Report]]></text>
+                    <text><![CDATA[TITLE]]></text>
                 </staticText>
                 <staticText>
-                    <reportElement x="395" y="43" width="180" height="20" forecolor="#FFFFFF" uuid="d1c1219f-6578-4fe1-bec0-878bdc368e40"/>
+                    <reportElement x="395" y="43" width="180" height="20" forecolor="#FFFFFF" uuid="e9a0e77f-f38d-460f-8869-63e18ea4d977"/>
                     <textElement textAlignment="Right">
                         <font size="14" isBold="false"/>
                     </textElement>
-                    <text><![CDATA[Classified]]></text>
+                    <text><![CDATA[Add a description here]]></text>
                 </staticText>
             </frame>
         </band>
@@ -56,158 +38,68 @@
     <columnHeader>
         <band height="21">
             <line>
-                <reportElement x="-20" y="20" width="595" height="1" forecolor="#666666" uuid="ab1e4c38-8abc-4048-97e4-69e3659d6b7b"/>
+                <reportElement x="-20" y="20" width="595" height="1" forecolor="#666666" uuid="eaa4a2da-bd5f-4904-bd14-c2e4471c2261"/>
             </line>
             <staticText>
-                <reportElement mode="Opaque" x="0" y="0" width="69" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="509a781a-c377-480b-9b01-093bda3a96b4">
-                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="92bc5892-a0ef-4bb3-9c91-ef8cb2e50579"/>
+                <reportElement mode="Opaque" x="0" y="0" width="185" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="4ddcfe3e-b134-43a8-a599-69b5c94458af">
+                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="67a091d4-cd69-4a16-9789-faeedc0660a3"/>
                 </reportElement>
                 <textElement textAlignment="Center">
                     <font size="14" isBold="true"/>
                 </textElement>
-                <text><![CDATA[ID]]></text>
+                <text><![CDATA[Student Name]]></text>
             </staticText>
             <staticText>
-                <reportElement mode="Opaque" x="69" y="0" width="69" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="73a49ca4-1543-4a98-bdfd-281ec34c6f6b">
-                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="4d440673-7dbc-4908-89a0-1a46dff3567d"/>
+                <reportElement mode="Opaque" x="185" y="0" width="185" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="acf68722-f53e-45bf-97dc-bb73ed113dc0">
+                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d867ad0f-f4ef-4933-966c-75a1c0dcd20d"/>
                 </reportElement>
                 <textElement textAlignment="Center">
                     <font size="14" isBold="true"/>
                 </textElement>
-                <text><![CDATA[firstName]]></text>
+                <text><![CDATA[Id Roll]]></text>
             </staticText>
             <staticText>
-                <reportElement mode="Opaque" x="138" y="0" width="69" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="27669db7-450d-4f4b-8572-08684c1f59fb">
-                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="495dd71e-7626-4fa9-9d27-8bd1d81a2624"/>
+                <reportElement mode="Opaque" x="370" y="0" width="185" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="42a25771-3cda-4d95-b4d3-378db867c9e2">
+                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="4f229341-0c69-47fa-aa33-ab7cb10f9ada"/>
                 </reportElement>
                 <textElement textAlignment="Center">
                     <font size="14" isBold="true"/>
                 </textElement>
-                <text><![CDATA[last_name]]></text>
-            </staticText>
-            <staticText>
-                <reportElement mode="Opaque" x="207" y="0" width="69" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="197fa9c6-cc35-43f9-b12b-9542b646fdad">
-                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="68c4f84a-100c-458d-a618-ec1dbbe11d60"/>
-                </reportElement>
-                <textElement textAlignment="Center">
-                    <font size="14" isBold="true"/>
-                </textElement>
-                <text><![CDATA[age]]></text>
-            </staticText>
-            <staticText>
-                <reportElement mode="Opaque" x="276" y="0" width="69" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="8452adb9-859d-450e-9761-4f8a7a517726">
-                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="4f39de45-b1a5-48d7-9823-70fd38f30173"/>
-                </reportElement>
-                <textElement textAlignment="Center">
-                    <font size="14" isBold="true"/>
-                </textElement>
-                <text><![CDATA[email]]></text>
-            </staticText>
-            <staticText>
-                <reportElement mode="Opaque" x="345" y="0" width="69" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="698929ae-1d16-49e0-8099-df458171df9c">
-                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="c9a5b92d-b10d-49d0-9896-166151f53447"/>
-                </reportElement>
-                <textElement textAlignment="Center">
-                    <font size="14" isBold="true"/>
-                </textElement>
-                <text><![CDATA[started_date]]></text>
-            </staticText>
-            <staticText>
-                <reportElement mode="Opaque" x="414" y="0" width="69" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="10c6e082-e48b-4cd1-9049-18b11c6727ce">
-                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="cb6d37d4-a512-413b-b5f6-e065ebf75656"/>
-                </reportElement>
-                <textElement textAlignment="Center">
-                    <font size="14" isBold="true"/>
-                </textElement>
-                <text><![CDATA[expected_graduate]]></text>
-            </staticText>
-            <staticText>
-                <reportElement mode="Opaque" x="483" y="0" width="69" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="3faf88c1-f049-42fc-acb8-861db5a4d5c5">
-                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d2073b07-d529-4cf1-a9f2-8259d5027064"/>
-                </reportElement>
-                <textElement textAlignment="Center">
-                    <font size="14" isBold="true"/>
-                </textElement>
-                <text><![CDATA[active]]></text>
+                <text><![CDATA[School]]></text>
             </staticText>
         </band>
     </columnHeader>
     <detail>
         <band height="20">
             <line>
-                <reportElement positionType="FixRelativeToBottom" x="0" y="19" width="555" height="1" uuid="fc82df81-ae6b-40f6-beef-819778c03879"/>
+                <reportElement positionType="FixRelativeToBottom" x="0" y="19" width="555" height="1" uuid="4e9c6074-91d5-46d6-9d26-a2a707164ecd"/>
             </line>
             <textField textAdjust="StretchHeight">
-                <reportElement x="0" y="0" width="69" height="20" uuid="3db282d4-e2c9-4e1d-afd7-6ba7ca57ebf5">
-                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="92bc5892-a0ef-4bb3-9c91-ef8cb2e50579"/>
+                <reportElement x="0" y="0" width="185" height="20" uuid="c431b60e-7f53-4d1a-b398-07d121b4dc98">
+                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="67a091d4-cd69-4a16-9789-faeedc0660a3"/>
                 </reportElement>
                 <textElement>
                     <font size="14"/>
                 </textElement>
-                <textFieldExpression><![CDATA[$F{id}]]></textFieldExpression>
+                <textFieldExpression><![CDATA[$F{studentName}]]></textFieldExpression>
             </textField>
             <textField textAdjust="StretchHeight">
-                <reportElement x="69" y="0" width="69" height="20" uuid="9d2a42b2-b9c5-4157-a145-44f5e115b821">
-                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="4d440673-7dbc-4908-89a0-1a46dff3567d"/>
+                <reportElement x="185" y="0" width="185" height="20" uuid="ebb4726d-0ccd-4e06-8966-c5c781421190">
+                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d867ad0f-f4ef-4933-966c-75a1c0dcd20d"/>
                 </reportElement>
                 <textElement>
                     <font size="14"/>
                 </textElement>
-                <textFieldExpression><![CDATA[$F{firstName}]]></textFieldExpression>
+                <textFieldExpression><![CDATA[$F{studentId}]]></textFieldExpression>
             </textField>
             <textField textAdjust="StretchHeight">
-                <reportElement x="138" y="0" width="69" height="20" uuid="a88e8726-1ca1-4d0d-8f0e-2909bef933d7">
-                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="495dd71e-7626-4fa9-9d27-8bd1d81a2624"/>
+                <reportElement x="370" y="0" width="185" height="20" uuid="2cb68848-f427-488f-8b2f-dc80b1f6d249">
+                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="4f229341-0c69-47fa-aa33-ab7cb10f9ada"/>
                 </reportElement>
                 <textElement>
                     <font size="14"/>
                 </textElement>
-                <textFieldExpression><![CDATA[$F{lastName}]]></textFieldExpression>
-            </textField>
-            <textField textAdjust="StretchHeight">
-                <reportElement x="207" y="0" width="69" height="20" uuid="814446e7-40b8-403e-820c-1a753087c20f">
-                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="68c4f84a-100c-458d-a618-ec1dbbe11d60"/>
-                </reportElement>
-                <textElement>
-                    <font size="14"/>
-                </textElement>
-                <textFieldExpression><![CDATA[$F{age}]]></textFieldExpression>
-            </textField>
-            <textField textAdjust="StretchHeight">
-                <reportElement x="276" y="0" width="69" height="20" uuid="40c1b629-2486-407d-9d75-be4507ff9338">
-                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="4f39de45-b1a5-48d7-9823-70fd38f30173"/>
-                </reportElement>
-                <textElement>
-                    <font size="14"/>
-                </textElement>
-                <textFieldExpression><![CDATA[$F{email}]]></textFieldExpression>
-            </textField>
-            <textField textAdjust="StretchHeight">
-                <reportElement x="345" y="0" width="69" height="20" uuid="dae9a64f-ad0f-4c8c-ba34-720aba952737">
-                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="c9a5b92d-b10d-49d0-9896-166151f53447"/>
-                </reportElement>
-                <textElement>
-                    <font size="14"/>
-                </textElement>
-                <textFieldExpression><![CDATA[$F{startedDate}]]></textFieldExpression>
-            </textField>
-            <textField textAdjust="StretchHeight">
-                <reportElement x="414" y="0" width="69" height="20" uuid="6c84a161-c826-4b4f-9bd9-52d589d4438f">
-                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="cb6d37d4-a512-413b-b5f6-e065ebf75656"/>
-                </reportElement>
-                <textElement>
-                    <font size="14"/>
-                </textElement>
-                <textFieldExpression><![CDATA[$F{expectedGraduate}]]></textFieldExpression>
-            </textField>
-            <textField textAdjust="StretchHeight">
-                <reportElement x="483" y="0" width="69" height="20" uuid="63a87ba2-6de0-47ff-9497-7211ca0c01a8">
-                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d2073b07-d529-4cf1-a9f2-8259d5027064"/>
-                </reportElement>
-                <textElement>
-                    <font size="14"/>
-                </textElement>
-                <textFieldExpression><![CDATA[$F{active}]]></textFieldExpression>
+                <textFieldExpression><![CDATA[$F{schoolName}]]></textFieldExpression>
             </textField>
         </band>
     </detail>
@@ -217,16 +109,16 @@
     <pageFooter>
         <band height="17">
             <textField>
-                <reportElement mode="Opaque" x="0" y="4" width="515" height="13" backcolor="#E6E6E6" uuid="ad87d53b-573c-40ae-88ed-d3c673b71b51"/>
+                <reportElement mode="Opaque" x="0" y="4" width="515" height="13" backcolor="#E6E6E6" uuid="80f0ee9d-23fa-49e2-a4d9-309703df824b"/>
                 <textElement textAlignment="Right"/>
                 <textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
             </textField>
             <textField evaluationTime="Report">
-                <reportElement mode="Opaque" x="515" y="4" width="40" height="13" backcolor="#E6E6E6" uuid="75abbc4f-40ef-4bfd-a23d-f72c90ec36fe"/>
+                <reportElement mode="Opaque" x="515" y="4" width="40" height="13" backcolor="#E6E6E6" uuid="7dc1c07b-df15-4168-9eb6-121b861b4c7f"/>
                 <textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
             </textField>
             <textField pattern="EEEEE dd MMMMM yyyy">
-                <reportElement x="0" y="4" width="100" height="13" uuid="288bbcc2-c133-481d-9344-e302dd018903"/>
+                <reportElement x="0" y="4" width="100" height="13" uuid="bcbb179f-bc7b-4a93-82db-6934eabe5931"/>
                 <textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
             </textField>
         </band>

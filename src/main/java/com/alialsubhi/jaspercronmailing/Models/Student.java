@@ -4,8 +4,6 @@ package com.alialsubhi.jaspercronmailing.Models;
 import jakarta.persistence.*;
 import lombok.*;
 
-import java.util.Date;
-
 @Entity
 @AllArgsConstructor
 @NoArgsConstructor
@@ -28,20 +26,16 @@ public class Student {
     @Column(name = "age")
     private int age;
 
-    @Column(name = "email" /*,unique = true, nullable = false*/)
+    @Column(name = "email")
     private String email;
 
-    @Temporal(TemporalType.DATE)
-    @Column(name = "started_date")
-    private Date startedDate;
+    // Define a relationship to link students to a school
+    @ManyToOne
+    @JoinColumn(name = "school_id")
+    private School school;
 
-    @Temporal(TemporalType.DATE)
-    @Column(name = "expected_graduate")
-    private Date expectedGraduate;
-
-    @Column(name = "active", columnDefinition = "boolean default true")
-    private boolean active;
 }
+
 
 
 /*  For Testing
