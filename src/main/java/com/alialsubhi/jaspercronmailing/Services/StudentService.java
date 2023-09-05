@@ -32,9 +32,20 @@ public class StudentService {
     }
 
     public Student updateStudent(Long id, Student updatedStudent) {
+        Student xStudents = studentRepository.findById(id).orElse(null);
+        if (xStudents == null) {
+            return null;
+        }
         if (studentRepository.existsById(id)) {
-            updatedStudent.setId(id); // Ensure the ID matches the path variable
-            return studentRepository.save(updatedStudent);
+            xStudents.setId(id); // Ensure the ID matches the path variable
+            xStudents.setFirstName(updatedStudent.getFirstName());
+            xStudents.setLastName(updatedStudent.getLastName());
+            xStudents.setRollNumber(updatedStudent.getRollNumber());
+            xStudents.setAge(updatedStudent.getAge());
+            xStudents.setEmail(updatedStudent.getEmail());
+            xStudents.setSchool(updatedStudent.getSchool());
+
+            return studentRepository.save(xStudents);
         }
         return null; // Student with the given ID not found
     }

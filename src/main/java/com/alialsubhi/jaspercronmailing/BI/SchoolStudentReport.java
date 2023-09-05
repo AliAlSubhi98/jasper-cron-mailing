@@ -2,18 +2,13 @@ package com.alialsubhi.jaspercronmailing.BI;
 
 import lombok.*;
 
-@Getter
-@Setter
+@Builder
 @Data
-@AllArgsConstructor
-@NoArgsConstructor
 public class SchoolStudentReport {
 
-
     String studentName;
-
     Long studentId;
-
+    Long rollNumber;
     String schoolName;
 
 }

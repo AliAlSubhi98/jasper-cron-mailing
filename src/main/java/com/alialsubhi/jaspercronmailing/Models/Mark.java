@@ -17,7 +17,7 @@ public class Mark {
     private Long id;
 
     @Column(name = "obtained_mark")
-    private int obtainedMark;
+    private Double obtainedMark;
 
     @Column(name = "grade")
     private String grade;

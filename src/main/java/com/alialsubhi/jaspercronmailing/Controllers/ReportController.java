@@ -11,10 +11,21 @@ import java.io.FileNotFoundException;
 public class ReportController {
     @Autowired
     private ReportService reportService;
-    @GetMapping("/reportStudent")
+    @GetMapping("/generateSchoolWithStudentReport")
     public String generateReport() {
         try {
-            return reportService.generateReport();
+            return reportService.generateSchoolWithStudentReport();
+        } catch (JRException | FileNotFoundException e) {
+            e.printStackTrace();
+            return "Report generation failed.";
+        }
+    }
+
+
+    @GetMapping("/generateCoursesReport")
+    public String generateCoursesReport() {
+        try {
+            return reportService.generateCoursesReport();
         } catch (JRException | FileNotFoundException e) {
             e.printStackTrace();
             return "Report generation failed.";
