@@ -1,5 +1,6 @@
 package com.alialsubhi.jaspercronmailing.Models;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -23,6 +24,7 @@ public class Course {
     private String name;
 
     // Define a relationship to represent marks associated with the course
+    @JsonIgnore
     @OneToMany(mappedBy = "course", cascade = CascadeType.ALL)
     private List<Mark> marks = new ArrayList<>();
 

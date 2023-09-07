@@ -1,5 +1,6 @@
 package com.alialsubhi.jaspercronmailing.Services;
 
+import com.alialsubhi.jaspercronmailing.BI.CourseAverageMarksReport;
 import com.alialsubhi.jaspercronmailing.BI.CoursesReport;
 import com.alialsubhi.jaspercronmailing.BI.SchoolStudentReport;
 import com.alialsubhi.jaspercronmailing.Models.Course;
@@ -70,7 +71,7 @@ public class ReportService {
             }
         }
 
-        File file = ResourceUtils.getFile("classpath:SchoolsReport.jrxml");
+        File file = ResourceUtils.getFile("classpath:SchoolStudentReport.jrxml");
 
 
         JasperReport jasperReport = JasperCompileManager.compileReport(file.getAbsolutePath());
@@ -81,8 +82,8 @@ public class ReportService {
         Map<String, Object> parameters = new HashMap<>();
         parameters.put("CreatedBy", "AliAlSubhi");
         JasperPrint jasperPrint = JasperFillManager.fillReport(jasperReport, parameters, dataSource);
-        JasperExportManager.exportReportToPdfFile(jasperPrint, pathToReports +"\\SchoolReport.pdf");
-        return "Report generated: " + pathToReports + "\\SchoolReport.pdf";
+        JasperExportManager.exportReportToPdfFile(jasperPrint, pathToReports +"\\SchoolWithStudentReport.pdf");
+        return "Report generated: " + pathToReports + "\\SchoolWithStudentReport.pdf";
     }
 
 
@@ -105,7 +106,7 @@ public class ReportService {
             }
         }
 
-        File file = ResourceUtils.getFile("classpath:CoursesReport.jrxml");
+        File file = ResourceUtils.getFile("classpath:CourseAverageMarkReport.jrxml");
 
 
         JasperReport jasperReport = JasperCompileManager.compileReport(file.getAbsolutePath());
@@ -119,6 +120,41 @@ public class ReportService {
         JasperExportManager.exportReportToPdfFile(jasperPrint, pathToReports +"\\SchoolReport.pdf");
         return "Report generated: " + pathToReports + "\\SchoolReport.pdf";
     }
+
+
+//    public String Report() throws FileNotFoundException, JRException {
+//        List<Course> courseList = courseRepository.findAll();
+//        List<Mark> markList = markRepository.findAll();
+//
+//        List<CourseAverageMarksReport> courseAverageMarksReportArrayList = new ArrayList<>(); //  to hold the Reports
+//
+//        for(Course course : courseList){
+//            for(Mark mark : markList){
+//
+//
+//
+//            }
+//
+//        }
+//
+//
+//
+//
+//        File file = ResourceUtils.getFile("classpath:CoursesReport.jrxml");
+//
+//
+//        JasperReport jasperReport = JasperCompileManager.compileReport(file.getAbsolutePath());
+//
+//        // Create a data source from the reports list
+//        JRBeanCollectionDataSource dataSource = new JRBeanCollectionDataSource(courseAverageMarksReportArrayList);
+//
+//        Map<String, Object> parameters = new HashMap<>();
+//        parameters.put("CreatedBy", "AliAlSubhi");
+//        JasperPrint jasperPrint = JasperFillManager.fillReport(jasperReport, parameters, dataSource);
+//        JasperExportManager.exportReportToPdfFile(jasperPrint, pathToReports +"\\courseAverageMarksReport.pdf");
+//        return "Report generated: " + pathToReports + "\\courseAverageMarksReport.pdf";
+//    }
+
 
 
 

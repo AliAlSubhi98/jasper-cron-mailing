@@ -31,4 +31,17 @@ public class Mark {
     @JoinColumn(name = "course_id")
     private Course course;
 
+    public String getGrade() {
+        if (obtainedMark >= 90) {
+            return "A";
+        } else if (obtainedMark >= 80) {
+            return "B";
+        } else if (obtainedMark >= 70) {
+            return "C";
+        } else if (obtainedMark >= 60) {
+            return "D";
+        } else {
+            return "F";
+        }
+    }
 }

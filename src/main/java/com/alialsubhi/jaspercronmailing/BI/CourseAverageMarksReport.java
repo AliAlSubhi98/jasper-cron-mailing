@@ -5,9 +5,8 @@ import lombok.Data;
 
 @Data
 @Builder
-public class CoursesReport {
+public class CourseAverageMarksReport {
+    Double averageMark;
     String courseName;
-    Double obtainedMark;
-    String grade;
 
 }
